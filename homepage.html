@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shah Alam Camera</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="homepage1.css">
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.5/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #52504d">
+    <div class="container">
+      <img width="70" height="70" src="./images/logo.png" alt="Company Logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="text-align:center;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="text-align:center;">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#product">Camera</a></li>
+          <li class="nav-item"><a class="nav-link" href="#product-1">Lens</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="button">
+          <a href="./php/login.php" style="margin-right: 15px;" class="btn btn-outline-warning btn-lg">Login</a>
+          <a href="./php/signup.php" class="btn btn-warning btn-lg">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="welcome-section">
+    <div class="background-overlay">
+      <img src="./images/bg-img.png" alt="Background Image" class="background-image">
+    </div>
+    <div class="text-overlay">
+      <div class="welcome-content">
+        <h1>Shah Alam Camera Rentals</h1>
+        <p class="lead">Your one-stop destination for premium camera equipment. <br>Rent hassle-free
+          and
+          capture unforgettable moments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section bg-white py-5" style="min-height:80vh;">
+    <div class="container">
+      <div class="content text-center mb-4">
+        <h2>About Us</h2>
+        <p class="lead">Discover how we redefine excellence in the world of photography.</p>
+      </div>
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4" style="margin:10px auto;">
+          <div class="card border-dark text-center card-hover">
+            <img src="images/buy_cam.png" class="card-about" alt="Sales Icon">
+            <div class="card-body">
+              <p class="card-text">We provide a wide range of new and pre-owned cameras, lenses, and accessories for
+                every photography
+                enthusiast. </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4" style="margin:10px auto;">
+          <div class="card border-dark text-center card-hover">
+            <img src="images/rent_cam.png" class="card-about" alt="Rental Icon">
+            <div class="card-body">
+              <p class="card-text">We provide rental services for professional-grade cameras & lenses to unleash your
+                creativity without limits.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4" style="margin:10px auto;">
+          <div class="card border-dark text-center card-hover">
+            <img src="images/repair_cam.png" class="card-about" alt="Repair Icon">
+            <div class="card-body">
+              <p class="card-text">We offer expert repair and maintenance services to ensure your photography equipment
+                remains in top condition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section id="product" class="section py-5" style="min-height:120vh; background-color:#eee;">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2>Cameras</h2>
+        <p class="lead">Explore our extensive collection of cameras, crafted to meet your needs. </p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div id="camera1Carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/EOS_front.png" class="d-block carousel-image mx-auto" alt="Camera Front View">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/EOS_back.png" class="d-block carousel-image mx-auto" alt="Camera Top View">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/EOS_top.png" class="d-block carousel-image mx-auto" alt="Camera Side View">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/EOS_left.png" class="d-block carousel-image mx-auto" alt="Camera Bottom View">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#camera1Carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#camera1Carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CANON EOS R5</h5>
+              <p class="card-text">45MP Full-frame, 8K Video, Dual Pixel AF, In-body Stabilization, Wi-Fi
+              </p>
+            </div>
+            <!-- Card Footer -->
+            <div class="card-footer bg-transparent text-center">
+              <button class="btn btn-warning btn-lg w-50" onclick="showLoginAlert()">Rent Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <div id="camera2Carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/alpa_front.webp" class="d-block carousel-image mx-auto">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/alpa_back.webp" class="d-block carousel-image mx-auto">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/alpha_top.webp" class="d-block carousel-image mx-auto">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#camera2Carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#camera2Carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">SONY ALPHA A7 III</h5>
+              <p class="card-text">24MP Full-frame, 4K Video, Fast Hybrid AF, Compact Design, 10fps Burst
+              </p>
+            </div>
+            <!-- Card Footer -->
+            <div class="card-footer bg-transparent text-center">
+              <button class="btn btn-warning btn-lg w-50" onclick="showLoginAlert()">Rent Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <div id="camera3Carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/nikon_front.webp" class="d-block carousel-image mx-auto">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/nikon_back.webp" class="d-block carousel-image mx-auto">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/nikon_top.webp" class="d-block carousel-image mx-auto">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#camera3Carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#camera3Carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">NIKON D3500</h5>
+              <p class="card-text">24MP APS-C, Beginner-Friendly, Lightweight, Full HD 1080p Video,
+                SnapBridge</p>
+            </div>
+            <!-- Card Footer -->
+            <div class="card-footer bg-transparent text-center">
+              <button class="btn btn-warning btn-lg w-50" onclick="showLoginAlert()">Rent Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="col">
+          <div class="card h-100">
+            <div id="camera4Carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/zv_back.webp" class="d-block carousel-image mx-auto">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/zv_both.webp" class="d-block carousel-image mx-auto">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/zv_top.webp" class="d-block carousel-image mx-auto">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/zv_left.webp" class="d-block carousel-image mx-auto">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#camera4Carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#camera4Carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">SONY ZV-1 II</h5>
+              <p class="card-text">20MP 1-inch Sensor, 4K Video, Ideal for Vlogging, Built-in ND Filter,
+                Compact</p>
+            </div>
+            <!-- Card Footer -->
+            <div class="card-footer bg-transparent text-center">
+              <button class="btn btn-warning btn-lg w-50" onclick="showLoginAlert()">Rent Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 5 -->
+        <div class="col">
+          <div class="card h-100">
+            <div id="camera5Carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/g7_front.png" class="d-block carousel-image mx-auto">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/g7_front_slant.png" class="d-block carousel-image mx-auto">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/g7_back.png" class="d-block carousel-image mx-auto">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/g7_top.png" class="d-block carousel-image mx-auto">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#camera5Carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#camera5Carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CANON PowerShot G7 X Mark III</h5>
+              <p class="card-text">20MP 1-inch Sensor, 4K Video, Flip-Up Screen, Ideal for Vlogs</p>
+            </div>
+            <!-- Card Footer -->
+            <div class="card-footer bg-transparent text-center">
+              <button class="btn btn-warning btn-lg w-50" onclick="showLoginAlert()">Rent Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="col">
+          <div class="card h-100">
+            <div id="camera6Carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/EOS_90D_front.png" class="d-block carousel-image mx-auto">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/EOS_90D_BACK.png" class="d-block carousel-image mx-auto">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/eos_90D_TOP.png" class="d-block carousel-image mx-auto">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#camera6Carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#camera6Carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CANON EOS 90D</h5>
+              <p class="card-text">32.5MP APS-C, 4K Video, High Burst Rate, Dual Pixel AF, Great Battery
+                Life
+              </p>
+            </div>
+            <!-- Card Footer -->
+            <div class="card-footer bg-transparent text-center">
+              <button class="btn btn-warning btn-lg w-50" onclick="showLoginAlert()">Rent Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="product-1" class="section bg-white py-5" style="min-height:100vh;">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2>Lens</h2>
+        <p class="lead">Discover our diverse range of lenses, tailored for your creative vision.</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- Lens Card 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/canon_70.webp" class="carousel-image mx-auto">
+            <div class="card-body text-center">
+              <h5 class="card-title">CANON RF 24-70mm f/2.8L IS USM</h5>
+              <p class="card-text">Versatile Zoom, Image Stabilization, High-Speed Autofocus</p>
+            </div>
+            <div class="card-footer bg-transparent text-center">
+              <button class="btn btn-warning btn-lg w-50" onclick="showLoginAlert()">Rent Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Lens Card 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/canon_50.webp" class="carousel-image mx-auto">
+            <div class="card-body text-center">
+              <h5 class="card-title">CANON EF 50mm f/1.8 STM</h5>
+              <p class="card-text">Affordable Prime, Fast f/1.8, Great for Portraits, Smooth AF.</p>
+            </div>
+            <div class="card-footer bg-transparent text-center">
+              <button class="btn btn-warning btn-lg w-50" onclick="showLoginAlert()">Rent Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Lens Card 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/sony.jpg" class="carousel-image mx-auto">
+            <div class="card-body text-center">
+              <h5 class="card-title">SONY FE 50mm f/1.8</h5>
+              <p class="card-text">Compact Prime Lens, Bright f/1.8 Aperture, Lightweight, Fast AF
+              <p>
+            </div>
+            <div class="card-footer bg-transparent text-center">
+              <button class="btn btn-warning btn-lg w-50" onclick="showLoginAlert()">Rent Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Lens Card 4 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/nikon.webp" class="carousel-image mx-auto">
+            <div class="card-body text-center">
+              <h5 class="card-title">NIKON AF-S 35mm f/1.8G</h5>
+              <p class="card-text">Prime Lens, Bright Aperture, Compact, Great for Portraits</p>
+            </div>
+            <div class="card-footer bg-transparent text-center">
+              <button class="btn btn-warning btn-lg w-50" onclick="showLoginAlert()">Rent Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- login required pop-up -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login Required</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>You need to log in to rent this item. Please log in to continue.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="php/login.php" class="btn btn-primary btn-md">Log In</a>
+          <button type="button" class="btn btn-secondary btn-md" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact" class="section py-5" style="min-height:60vh; background-color: #52504d; color:white">
+    <div class="container">
+      <div class="contact-section text-center ">
+        <h2>Contact Us Today!</h2>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <img style="max-height: 270px;" src="./images/kedai.jpg">
+          </div>
+
+          <div class="col-md-8 text-start">
+            <h4 class="mt-3">Shah Alam Camera</h4><br>
+            <p><strong>Tel:</strong> +60 18 874 8487</p>
+            <p><strong>Email:</strong> gadgetpro88@yahoo.com</p>
+            <p><strong>Address:</strong> No. 25A, Tingkat 1, Jalan Nelayan 19/A, 40300, Shah Alam, Selangor, MY</p>
+
+            <div class="social-icons mt-3">
+              <a href="https://www.facebook.com/kedaicamera.shahalam/?locale=ms_MY" target="_blank">
+                <img class="icons" src="images/fb.png" style="margin: 2px;"></a>
+              <a href="https://www.instagram.com/explore/locations/606739204/kedai-camera-shah-alam/?hl=en"
+                target="_blank">
+                <img class="icons" src="images/ig.webp" style="margin: 2px;"></a>
+              <a href="https://www.tiktok.com/@shahalamcamera?lang=en" target="_blank">
+                <img class="icons" src="images/tt.webp" style="margin: 2px;"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="text-center py-3 text-white" style="background-color: #52504d;">
+    <p>© Shah Alam Camera. All Rights Reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.0/dist/sweetalert2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const rentNowButtons = document.querySelectorAll(".btn-outline-dark");
+    const loginModal = new bootstrap.Modal(document.getElementById("loginModal"));
+
+    rentNowButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        loginModal.show();
+      });
+    });
+  </script>
+  <script>
+    function showLoginAlert() {
+      // SweetAlert for login prompt
+      Swal.fire({
+        title: 'Login Required',
+        text: 'You must log in to proceed with the rental.',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Login',
+        cancelButtonText: 'Cancel',
+        reverseButtons: true
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Redirect to custhome.php for login
+          window.location.href = "./php/login.php";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
